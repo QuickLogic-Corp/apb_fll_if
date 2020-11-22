@@ -15,6 +15,7 @@ module apb_fll_if
 (
     input  logic                      HCLK,
     input  logic                      HRESETn,
+    
     input  logic [APB_ADDR_WIDTH-1:0] PADDR,
     input  logic               [31:0] PWDATA,
     input  logic                      PWRITE,
@@ -31,6 +32,7 @@ module apb_fll_if
     input  logic                      fll1_ack_i,
     input  logic               [31:0] fll1_r_data_i,
     input  logic                      fll1_lock_i,
+    
     output logic                      fll2_req_o,
     output logic                      fll2_wrn_o,
     output logic                [1:0] fll2_add_o,
@@ -38,6 +40,7 @@ module apb_fll_if
     input  logic                      fll2_ack_i,
     input  logic               [31:0] fll2_r_data_i,
     input  logic                      fll2_lock_i,
+    
     output logic                      fll3_req_o,
     output logic                      fll3_wrn_o,
     output logic                [1:0] fll3_add_o,
@@ -45,6 +48,7 @@ module apb_fll_if
     input  logic                      fll3_ack_i,
     input  logic               [31:0] fll3_r_data_i,
     input  logic                      fll3_lock_i,
+    
     output logic                      bbgen_req_o,
     output logic                      bbgen_wrn_o,
     output logic                      bbgen_sel_o,
